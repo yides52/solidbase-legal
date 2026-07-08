@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Solid Base Estimator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; background: #FAF3E7; color: #3E2723; margin: 0; padding: 0; }
+  .container { max-width: 720px; margin: 60px auto; padding: 40px; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(155, 107, 58, 0.15); }
+  h1 { color: #9B6B3A; font-size: 32px; margin: 0 0 12px; }
+  h2 { color: #9B6B3A; font-size: 20px; margin: 32px 0 12px; }
+  .tagline { color: #8B6F5C; font-size: 16px; margin: 0 0 24px; }
+  .logo { width: 80px; height: 80px; background: #D7B393; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 40px; color: #9B6B3A; margin-bottom: 20px; }
+  p { line-height: 1.6; margin: 12px 0; }
+  ul { line-height: 1.8; }
+  a { color: #9B6B3A; text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #E8D4B8; color: #8B6F5C; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">B</div>
+  <h1>Solid Base Estimator</h1>
+  <p class="tagline">Internal estimate-to-QuickBooks automation for Solid Base construction.</p>
+
+  <h2>What it does</h2>
+  <p>Solid Base Estimator is an internal desktop application that takes construction estimates in plain text form and automatically creates matching estimates in QuickBooks Online. It's built for use by Solid Base to reduce manual data entry between project proposals and accounting.</p>
+
+  <h2>How it works</h2>
+  <ul>
+    <li>User pastes an estimate description into the app</li>
+    <li>Emily (an AI assistant powered by the Anthropic API) parses the text into structured line items</li>
+    <li>The user reviews the parsed rows on-screen</li>
+    <li>With one click, the estimate is pushed into QuickBooks Online for the linked customer</li>
+  </ul>
+
+  <h2>QuickBooks integration</h2>
+  <p>The application connects to QuickBooks Online through Intuit's official OAuth 2.0 flow. It only writes estimates and reads item/customer lists needed to build those estimates. No other QuickBooks data is accessed.</p>
+
+  <div class="footer">
+    <p>Solid Base Estimator is a private in-house tool. It is not distributed publicly.</p>
+    <p><a href="tos.html">Terms of Service</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</div>
+</body>
+</html>

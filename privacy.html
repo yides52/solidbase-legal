@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Solid Base Estimator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: -apple-system, Segoe UI, sans-serif; background: #FAF3E7; color: #3E2723; margin: 0; padding: 0; }
+  .container { max-width: 780px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(155, 107, 58, 0.15); }
+  h1 { color: #9B6B3A; font-size: 28px; margin: 0 0 8px; }
+  h2 { color: #9B6B3A; font-size: 18px; margin: 28px 0 8px; }
+  .updated { color: #8B6F5C; font-size: 14px; margin-bottom: 24px; }
+  p, li { line-height: 1.65; }
+  a { color: #9B6B3A; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: July 8, 2026</p>
+
+<p>This Privacy Policy explains how the Solid Base Estimator application ("the App") handles data. The App is an internal tool operated by Solid Base ("we", "us", "our") and is not distributed publicly.</p>
+
+<h2>1. Data We Access</h2>
+<p>When you connect the App to QuickBooks Online, we access the following data on your behalf:</p>
+<ul>
+  <li><strong>Customers list:</strong> to identify which customer an estimate should be linked to.</li>
+  <li><strong>Items list:</strong> to map parsed estimate line items to QuickBooks items.</li>
+  <li><strong>Estimate creation:</strong> we write new estimates to QuickBooks Online.</li>
+</ul>
+<p>We do not read invoices, bills, transactions, banking data, or any other QuickBooks data.</p>
+
+<h2>2. Data You Provide</h2>
+<p>The App processes the estimate text you paste into it. This text is sent to the Anthropic API for parsing. Only the pasted estimate text is transmitted &mdash; no QuickBooks customer names, item lists, or other data is sent to Anthropic.</p>
+
+<h2>3. Where Data Is Stored</h2>
+<p>The App runs locally on the user's own computer. It stores:</p>
+<ul>
+  <li>An Anthropic API key (locally, on the user's machine, under the user's Windows profile)</li>
+  <li>QuickBooks OAuth access and refresh tokens (locally, same location)</li>
+  <li>A cached list of QuickBooks items (locally, same location)</li>
+</ul>
+<p>No data is transmitted to any Solid Base server. There is no Solid Base server.</p>
+
+<h2>4. Third Parties</h2>
+<p>We use the following third-party services, each governed by its own privacy policy:</p>
+<ul>
+  <li><strong>Intuit QuickBooks Online</strong> &mdash; for reading and writing accounting data (<a href="https://www.intuit.com/privacy/" target="_blank">privacy policy</a>)</li>
+  <li><strong>Anthropic</strong> &mdash; for AI parsing of estimate text (<a href="https://www.anthropic.com/legal/privacy" target="_blank">privacy policy</a>)</li>
+</ul>
+
+<h2>5. Data Retention</h2>
+<p>The App itself does not retain estimate text after it has been parsed. Tokens and cached items are retained until the user disconnects or deletes the local settings file.</p>
+
+<h2>6. Security</h2>
+<p>OAuth tokens are stored on the user's local machine. Anyone with access to that machine could access the tokens. We recommend using standard OS-level protections (login password, disk encryption) on the machine that runs the App.</p>
+
+<h2>7. Your Choices</h2>
+<p>You can disconnect QuickBooks Online at any time from within the App's Settings screen. This immediately clears all stored tokens.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this Policy from time to time. Any changes will be reflected in the "Last updated" date at the top.</p>
+
+<h2>9. Contact</h2>
+<p>For privacy questions, please contact Solid Base.</p>
+
+<p style="margin-top:32px"><a href="index.html">← Back</a></p>
+</div>
+</body>
+</html>
